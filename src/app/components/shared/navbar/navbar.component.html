@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-inverse bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <a class="navbar-brand" href="#">
+    <img src="assets/img/banner-ico.png" width="30" height="30" alt="">
+    Spotiapp
+  </a>
+
+  <!-- active / mt-2 mt-lg-0 / https://restcountries.eu/rest/v2/lang/es -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item" [routerLinkActive] ="['active']">
+        <a class="nav-link" [routerLink]="['home']">Home</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['search']">Search</a>
+      </li>
+    </ul>
+  </div>
+</nav>
